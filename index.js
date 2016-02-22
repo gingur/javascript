@@ -1,4 +1,4 @@
 /**
- * Export our main distribution path.
+ * Export the eslint configuration
  */
-module.exports = require('path').join(__dirname, 'dist');
+module.exports = JSON.parse(require('fs').readFileSync('./dist/.eslintrc'));
